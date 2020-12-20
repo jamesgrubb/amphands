@@ -12,5 +12,6 @@ exports.handler = async (event)
     //  }, 
         body: JSON.stringify(size),
     };
+    console.log(response)
     return response;
 };

@@ -69,7 +69,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-amphands-dev-153132-deployment",
-          "S3Key": "amplify-builds/amphandsfunction-32563937376463423173-build.zip"
+          "S3Key": "amplify-builds/amphandsfunction-314a516b4b4c6e704661-build.zip"
         }
       }
     },
