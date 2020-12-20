@@ -1,7 +1,24 @@
 {% extends 'base.njk' %}
 {% block main%}
 <h1>test</h1>
+<label for="input">get image</label>
+<input type="form" acept="image/japeg">
 <script>
-    
+const input = document.querySelector('#input')
+input.addEventListener('change', async (event) => {
+const size = event.target.files[0].size
+try{
+await fetch('https://qnaxfz7i41.execute-api.eu-west-1.amazonaws.com/dev/count',{
+method: 'POST',
+headers: {
+'Content-Type':'application/json'
+},
+body: JSON.stringify(size)
+}).then(res => res.json())
+}
+catch(err){
+console.log(err)
+}
+})
 </script>
 {% endblock %}

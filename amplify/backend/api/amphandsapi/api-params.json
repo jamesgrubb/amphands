@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/count",
+            "lambdaFunction": "amphandsfunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/count"
+        }
+    ],
+    "resourceName": "amphandsapi",
+    "apiName": "amphandsapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "amphandsfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amphands-dev-153132-authRole",
+        "unAuthRoleName": "amplify-amphands-dev-153132-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "amphandsfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
