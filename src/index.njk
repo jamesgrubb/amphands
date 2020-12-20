@@ -2,7 +2,7 @@
 {% block main%}
 <h1>test</h1>
 <label for="input">get image</label>
-<input type="form" acept="image/japeg">
+<input id="input" type="file" accept="image/jpeg">
 <script>
 const input = document.querySelector('#input')
 input.addEventListener('change', async (event) => {
