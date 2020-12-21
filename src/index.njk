@@ -6,19 +6,15 @@
 <script>
 const input = document.querySelector('#input')
 input.addEventListener('change', async (event) => {
-const size = event.target.files[0].size
-try{
-await fetch('https://blejc7m8k7.execute-api.eu-west-2.amazonaws.com/dev/count',{
+const fileSize = event.target.files[0].size
+const response = await fetch('https://blejc7m8k7.execute-api.eu-west-2.amazonaws.com/dev/count',{
 method: 'POST',
 headers: {
 'Content-type':'application/json'
 },
-body: JSON.stringify('hello from index')
-}).then(res => res.json())
-}
-catch(err){
-console.log(err)
-}
+body: JSON.stringify({query: fileSize})
+}).then(res => res.json()).catch(err => console.log('fetch error ' + err ))
+console.log(response)
 })
 </script>
 {% endblock %}
