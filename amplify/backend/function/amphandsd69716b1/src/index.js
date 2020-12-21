@@ -1,8 +1,8 @@
 
-
+const fetch = require('node-fetch')
 exports.handler = async (event) => {
     const {query} = JSON.parse(event.body)
-    const response = {
+    const response = await{
         statusCode: 200,
     //  Uncomment below to enable CORS requests
      headers: {

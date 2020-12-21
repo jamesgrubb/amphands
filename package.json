@@ -4,8 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start":"eleventy --serve",
-    "build":"eleventy"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "autoprefixer": "^10.1.0",
+    "node-fetch": "^2.6.1",
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   }

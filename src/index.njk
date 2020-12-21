@@ -1,6 +1,9 @@
 {% extends 'base.njk' %}
 {% block main%}
 <h1>test</h1>
+{% for hand in count %}
+<h2>{{ hand.hands }}</h2>
+{% endfor %}
 <label for="input">get image</label>
 <input id="input" type="file" accept="image/jpeg">
 <script>
