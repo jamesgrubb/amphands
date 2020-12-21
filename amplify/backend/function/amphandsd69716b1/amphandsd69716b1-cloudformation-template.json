@@ -33,12 +33,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amphandsfunction",
+            "amphandsd69716b1",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amphandsfunction",
+                  "amphandsd69716b1",
                   "-",
                   {
                     "Ref": "env"
@@ -68,8 +68,8 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-amphands-dev-153132-deployment",
-          "S3Key": "amplify-builds/amphandsfunction-7369646a724b686f7843-build.zip"
+          "S3Bucket": "amplify-amphands-dev-123339-deployment",
+          "S3Key": "amplify-builds/amphandsd69716b1-3153674a3755746b4d67-build.zip"
         }
       }
     },
@@ -79,12 +79,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amphandsLambdaRoleaebe8ebd",
+            "amphandsLambdaRole838da3d1",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amphandsLambdaRoleaebe8ebd",
+                  "amphandsLambdaRole838da3d1",
                   "-",
                   {
                     "Ref": "env"

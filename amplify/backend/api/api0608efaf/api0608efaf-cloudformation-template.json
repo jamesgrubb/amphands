@@ -14,15 +14,15 @@
         },
     
     
-          "functionamphandsfunctionName": {
+          "functionamphandsd69716b1Name": {
             "Type": "String",
-            "Default": "functionamphandsfunctionName"
+            "Default": "functionamphandsd69716b1Name"
           },
         
           
-          "functionamphandsfunctionArn": {
+          "functionamphandsd69716b1Arn": {
             "Type": "String",
-            "Default": "functionamphandsfunctionArn"
+            "Default": "functionamphandsd69716b1Arn"
           }
         
           
@@ -45,16 +45,16 @@
         
         
         
-      "amphandsapi": {
+      "api0608efaf": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "amphandsapi",
+          "Name": "api0608efaf",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "amphandsapi"
+              "title": "api0608efaf"
             },
             "host": {
                 "Fn::Join": [
@@ -176,7 +176,7 @@
                             
                             {
                                 
-                                "Ref": "functionamphandsfunctionArn"
+                                "Ref": "functionamphandsd69716b1Arn"
                             },
                             
                             "/invocations"
@@ -275,7 +275,7 @@
                           
                           {
                             
-                            "Ref": "functionamphandsfunctionArn"
+                            "Ref": "functionamphandsd69716b1Arn"
                           },
                           
                           "/invocations"
@@ -332,12 +332,12 @@
                   
         
         
-        "functionamphandsfunctionPermissionamphandsapi": {
+        "functionamphandsd69716b1Permissionapi0608efaf": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
                     {
-                        "Ref":  "functionamphandsfunctionName"
+                        "Ref":  "functionamphandsd69716b1Name"
                     },
                     
                     "Action": "lambda:InvokeFunction",
@@ -356,7 +356,7 @@
                             },
                             ":",
                             {
-                                "Ref": "amphandsapi"
+                                "Ref": "api0608efaf"
                             },
                             "/*/*/*"
                         ]
@@ -367,7 +367,7 @@
         
         
         
-      "DeploymentAPIGWamphandsapi": {
+      "DeploymentAPIGWapi0608efaf": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
@@ -381,7 +381,7 @@
             ]
           },
           "RestApiId": {
-            "Ref": "amphandsapi"
+            "Ref": "api0608efaf"
           }
         }
       }
@@ -389,15 +389,15 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "amphandsapi"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "api0608efaf"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
-          "Value": "amphandsapi"
+          "Value": "api0608efaf"
         },
         "ApiId": {
           "Description": "API ID (prefix of API URL)",
-          "Value": {"Ref": "amphandsapi"}
+          "Value": {"Ref": "api0608efaf"}
         }
     }
   }

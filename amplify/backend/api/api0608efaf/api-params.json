@@ -2,30 +2,30 @@
     "paths": [
         {
             "name": "/count",
-            "lambdaFunction": "amphandsfunction",
+            "lambdaFunction": "amphandsd69716b1",
             "privacy": {
                 "open": true
             },
             "policyResourceName": "/count"
         }
     ],
-    "resourceName": "amphandsapi",
-    "apiName": "amphandsapi",
+    "resourceName": "api0608efaf",
+    "apiName": "api0608efaf",
     "functionArns": [
         {
-            "lambdaFunction": "amphandsfunction"
+            "lambdaFunction": "amphandsd69716b1"
         }
     ],
     "privacy": {
         "auth": 0,
         "unauth": 0,
-        "authRoleName": "amplify-amphands-dev-153132-authRole",
-        "unAuthRoleName": "amplify-amphands-dev-153132-unauthRole"
+        "authRoleName": "amplify-amphands-dev-123339-authRole",
+        "unAuthRoleName": "amplify-amphands-dev-123339-unauthRole"
     },
     "dependsOn": [
         {
             "category": "function",
-            "resourceName": "amphandsfunction",
+            "resourceName": "amphandsd69716b1",
             "attributes": [
                 "Name",
                 "Arn"
