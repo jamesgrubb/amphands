@@ -2,7 +2,7 @@
 
 exports.handler = async (event)
  => {
-    const { size } = JSON.parse(event.data)
+    console.log(event)
     // TODO implement
     const response = {
         statusCode: 200,
@@ -10,7 +10,7 @@ exports.handler = async (event)
     //  headers: {
     //      "Access-Control-Allow-Origin": "*"
     //  }, 
-        body: JSON.stringify(size),
+        body: JSON.stringify('Console.log'),
     };
     console.log(response)
     return response;
