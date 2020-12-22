@@ -9,7 +9,7 @@
 
 <h1>test</h1>
 
-<h2>1276314</h2>
+<h2>2927461</h2>
 
 <label for="input">get image</label>
 <input id="input" type="file" accept="image/jpeg">
@@ -24,7 +24,7 @@ headers: {
 },
 body: JSON.stringify({query: fileSize})
 }).then(res => res.json()).catch(err => console.log('fetch error ' + err ))
-console.log(response)
+console.log(response.data)
 })
 </script>
 
